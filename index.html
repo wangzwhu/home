@@ -1,538 +1,470 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:SimSun;
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:"Microsoft Himalaya";
-	panose-1:1 1 1 0 1 1 1 1 1 1;}
-@font-face
-	{font-family:"\@SimSun";
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0in;
-	margin-bottom:.0001pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	font-size:10.5pt;
-	font-family:"Calibri",sans-serif;}
-h2
-	{mso-style-link:"Heading 2 Char";
-	margin-right:0in;
-	margin-left:0in;
-	font-size:18.0pt;
-	font-family:SimSun;}
-p.MsoHeader, li.MsoHeader, div.MsoHeader
-	{mso-style-link:"Header Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	text-align:center;
-	layout-grid-mode:char;
-	border:none;
-	padding:0in;
-	font-size:9.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-link:"Footer Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	layout-grid-mode:char;
-	font-size:9.0pt;
-	font-family:"Calibri",sans-serif;}
-a:link, span.MsoHyperlink
-	{color:#0563C1;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:#954F72;
-	text-decoration:underline;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:SimSun;
-	font-weight:bold;}
-span.HeaderChar
-	{mso-style-name:"Header Char";
-	mso-style-link:Header;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-link:Footer;}
-.MsoChpDefault
-	{font-size:10.5pt;
-	font-family:"Calibri",sans-serif;}
- /* Page Definitions */
- @page WordSection1
-	{size:841.9pt 595.3pt;
-	margin:1.0in .75in 1.0in .75in;
-	layout-grid:15.6pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
 </style>
-
+<base href='file:\\\C:\Users\wangz\Desktop\'/>
 </head>
+<body>
+<h2>Zheng Wang (王正)</h2>
+<h3>Postdoctoral researcher</h3>
+<blockquote>
+<p>I am currently a postdoctoral researcher at <a href="http://www.satoh-lab.nii.ac.jp/index.html">Satoh-Lab</a>, <a href="https://www.nii.ac.jp/en/">National Institute of Informatics (NII)</a>, Japan, supervised by Prof. <a href="http://research.nii.ac.jp/~satoh/index.html">Shin'ichi Satoh</a>. I received my Ph.D. at <a href="http://multimedia.whu.edu.cn">National Engineering Research Center for Multimedia Software (NERCMS)</a>, <a href="http://www.whu.edu.cn">Wuhan University</a> in 2017, under the supervision of <a href="http://multimedia.whu.edu.cn/index.php?m=content&amp;c=index&amp;a=show&amp;catid=123&amp;id=89">Prof. Ruimin Hu</a>. My research interests focus on person re-identification and instance search. </p>
+<p>Shin'ichi Satoh Laboratory<br />
+National Institute of Informatics (NII)<br />
+2-1-2 Hitotsubashi, Chiyoda-ku, Tokyo 101-8430, Japan  
+</p>
+<p>wangz(at)nii.ac.jp</p>
+</blockquote>
+<h2>News</h2>
+<ul>
+<li><strong>2018.02.13</strong>, One paper was accepted by <a href="https://icra2018.org">ICRA 2018</a>.</li>
+<li><strong>2018.01.30</strong>, One paper was accepted by <a href="https://2018.ieeeicassp.org">ICASSP 2018</a>.</li>
+<li><strong>2017.11.09</strong>, One paper was accepted by <a href="https://aaai.org/Conferences/AAAI-18/">AAAI 2018</a>.</li>
+<li><strong>2017.10.01</strong>, I started to work at Satoh-Lab, as a postdoctoral researcher.</li>
+<li><strong>2017.09.20</strong>, I was awarded the ACM Wuhan Doctoral Dissertation Award, 2017.</li>
+<li><strong>2017.09.12</strong>, One paper was accepted by IEEE Transactions on Cybernetics.</li>
+<li><strong>2017.09.10</strong>, One paper was accepted by Pattern Recognition.</li>
+<li><strong>2017.07.02</strong>, One paper was accepted by <a href="http://www.acmmm.org/2017/">ACM Multimedia 2017</a>.</li>
+<li><strong>2017.05.10</strong>, I released some collected <a href="./re_id_resources.html">Re-id Resources</a>.</li>
+</ul>
+<h2>Publications</h2>
+<h3>Journal</h3>
+<ul>
+<li>
+<p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8059849">Person Reidentification via Discrepancy Matrix and Matrix Metric</a><br />
+<strong>Z Wang</strong>, R Hu, C Chen, Y Yu, J Jiang, C Liang, S Satoh<br />
+<em>IEEE Transactions on Cybernetics</em>, 2018  
+</p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/7346474/">Zero-shot Person Re-identification via Cross-view Consistency</a><br />
+<strong>Z Wang</strong>, R Hu, C Liang, Y Yu, J Jiang, M Ye, J Chen, Q Leng<br />
+<em>IEEE Transactions on Multimedia</em>, 2016  
+</p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/7502111/">DeepList: Learning Deep Features with Adaptive Listwise Constraint for Person Re-identification</a><br />
+J Wang, <strong>Z Wang</strong>, C Gao, N Sang, R Huang<br />
+<em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 2017  
+</p>
+</li>
+<li>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0031320317303576">Equidistance Constrained Metric Learning for Person Re-identification</a><br />
+J Wang, <strong>Z Wang</strong>, C Liang, C Gao, N Sang<br />
+<em>Pattern Recognition</em>, 2017  
+</p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/7557057/">Person Re-identification via Ranking Aggregation of Similarity Pulling and Dissimilarity Pushing</a><br />
+M Ye, C Liang, Y Yu, <strong>Z Wang</strong>, Q Leng, C Xiao, J Chen, R Hu<br />
+<em>IEEE Transactions on Multimedia</em>, 2016  
+</p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/7547257/">SRLSP: A Face Image Super-Resolution Algorithm Using Smooth Regression with Local Structure Prior</a><br />
+J Jiang, C Chen, J Ma, <strong>Z Wang</strong>, Z Wang, R Hu<br />
+<em>IEEE Transactions on Multimedia</em>, 2017 </p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/7553522/">Noise Robust Face Image Super-Resolution Through Smooth Sparse Representation</a><br />
+J Jiang, J Ma, C Chen, X Jiang, <strong>Z Wang</strong><br />
+<em>IEEE Transactions on Cybernetics</em>, 2017  
+</p>
+</li>
+</ul>
+<h3>Conference</h3>
+<ul>
+<li>
+<p>Visual Homing via Guided Locality Preserving Matching (Accepted)<br />
+J Ma, J Zhao, J Jiang, H Zhou, Y Zhou, <strong>Z Wang</strong>, X Guo<br />
+<em>ICRA</em>, 2018  
+</p>
+</li>
+<li>
+<p>Residual Learning for Face Sketch Synthesis (Accepted)<br />
+J Jiang, Y Yu, <strong>Z Wang</strong>, J Ma<br />
+<em>ICASSP</em>, 2018  
+</p>
+</li>
+<li>
+<p>Video-based Person Re-identification via Self Paced Weighting (Accepted)<br />
+W Huang, C Liang, Y Yu, <strong>Z Wang</strong>, W Ruan, R Hu<br />
+<em>AAAI</em>, 2018  
+</p>
+</li>
+<li>
+<p><a href="https://dl.acm.org/citation.cfm?id=3123421">Statistical Inference of Gaussian-Laplace Distribution for Person Verification</a><br />
+<strong>Z Wang</strong>, R Hu, Y Yu, J Jiang, J Ma, S Satoh<br />
+<em>ACM Multimedia</em>, 2017  
+</p>
+</li>
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/7952517/">TAICHI Distance for Person Re-identification</a><br />
+<strong>Z Wang</strong>, R Hu, Y Yu, C Liang, C Chen<br />
+<em>ICASSP</em>, 2017  
+</p>
+</li>
+<li>
+<p><a href="https://www.ijcai.org/Proceedings/16/Papers/379.pdf">Scale-adaptive Low-resolution Person Re-identification via Learning A Discriminating Surface</a><br />
+<strong>Z Wang</strong>, R Hu, Y Yu, J Jiang, C Liang, J Wang<br />
+<em>IJCAI</em>, 2016  
+</p>
+</li>
+<li>
+<p><a href="https://dl.acm.org/citation.cfm?id=2806400">Multi-Level Fusion for Person Re-identification with Incomplete Marks</a><br />
+<strong>Z Wang</strong>, R Hu, Y Yu, C Liang, W Huang<br />
+<em>ACM Multimedia</em>, 2015  
+</p>
+</li>
+<li>
+<p><a href="https://dl.acm.org/citation.cfm?id=2806326">Ranking Optimization for Person Re-identification via Similarity and Dissimilarity</a><br />
+M Ye, C Liang, <strong>Z Wang</strong>, Q Leng, J Chen<br />
+<em>ACM Multimedia</em>, 2015 </p>
+</li>
+<li>
+<p><a href="https://dl.acm.org/citation.cfm?id=2749347">Specific Person Retrieval via Incomplete Text Description</a><br />
+M Ye, C Liang, <strong>Z Wang</strong>, Q Leng, J Chen, J Liu  <br />
+<em>ICMR</em>, 2015   
+</p>
+</li>
+<li>
+<p><a href="http://ebooks.iospress.com/volumearticle/44777">Person Re-Identification via Multiple Coarse-to-Fine Deep Metrics</a><br />
+M Xiong, J Chen, <strong>Z Wang</strong>, Z Wang, R Hu, C Liang, D Shi<br />
+<em>ECAI</em>, 2016  
+</p>
+</li>
+<li>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-319-27671-7_15">Camera Network Based Person Re-identification by Leveraging Spatial-Temporal Constraint and Multiple Cameras Relations</a> <br />
+W Huang, R Hu, C Liang, Y Yu, <strong>Z Wang</strong>, X Zhong, C Zhang<br />
+<em>MMM</em>, 2016  
+</p>
+</li>
+<li>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-319-14442-9_6">Sparsity-Based Occlusion Handling Method for Person Re-identification</a><br />
+B Huang, J Chen, Y Wang, C Liang, <strong>Z Wang</strong>, K Sun<br />
+<em>MMM</em>, 2015   
+</p>
+</li>
+<li>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-319-13168-9_1">Region-based Interactive Ranking Optimization For Person Re-identification</a>   <br />
+<strong>Z Wang</strong>, R Hu, C Liang, Q Leng, K Sun<br />
+<em>PCM</em>, 2014, <code>Best Paper Award</code>  
+</p>
+</li>
+</ul>
+<h3>Technical report</h3>
+<ul>
+<li><a href="https://www-nlpir.nist.gov/projects/tvpubs/tv16.papers/whu-nercms.pdf">WHU-NERCMS at TRECVID2016: Instance Search Task</a><br />
+<strong>Z Wang</strong>, <em>et al.</em><br />
+<em>TRECVID Workshop</em>, 2016, <code>Top Performance</code>  </li>
+</ul>
+<h2>Patents</h2>
+<ul>
+<li>[Chinese Patent] ZL201410076028.3, A method and system for person re-identification based on regional relevance feedback</li>
+<li>[Chinese Patent] ZL201410541165.X, A method for adaptive person re-identification based on data driven</li>
+<li>[Chinese Patent] ZL201510153983.7, A method for person retrieval based on incomplete text description</li>
+<li>[Chinese Patent] ZL201410071721.1, A method for person re-identification based on co-metric learning</li>
+<li>[Chinese Patent] ZL201410454857.0, A method for person re-identification based on double-view ranking optimization</li>
+<li>[Chinese Patent] ZL201410827080.8, A method for person re-identification based on ranking aggregation similarity and dissimilarity</li>
+</ul>
+<h2>Awards</h2>
+<ul>
+<li>ACM Wuhan Doctoral Dissertation Award, Association for Computing Machinery, 2017</li>
+<li>Graduation with Honors, Wuhan University, 2017</li>
+<li>The First Prize of Hubei Science and Technology Progress, Hubei Province, 2016</li>
+<li>Academic Innovation Award, Wuhan University, 2016</li>
+<li>Best Paper Award, Pacific-Rim Conference on Multimedia (PCM), 2014</li>
+</ul>
 
-<body lang=EN-US link="#0563C1" vlink="#954F72" style='text-justify-trim:punctuation'>
-
-<div class=WordSection1 style='layout-grid:15.6pt'>
-
-<p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>&nbsp;</span></p>
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=132 valign=top style='width:99.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'><img
-  width=117 height=156 id="&#22270;&#29255; 13" src="index_files/image001.jpg"></span></p>
-  </td>
-  <td width=576 valign=top style='width:631.05pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal align=left style='margin-top:7.5pt;margin-right:0in;
-  margin-bottom:7.5pt;margin-left:0in;text-align:left;line-height:30.0pt;
-  background:white'><b><span style='font-size:26.0pt;font-family:"Microsoft Himalaya";
-  color:#214B6A'>Zheng Wang</span></b></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>I am currently a Post-doc Project Researcher
-  in </span><a href="http://www.satoh-lab.nii.ac.jp/index.html"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Satoh-Lab</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>, </span><a href="http://www.nii.ac.jp/en/"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>National
-  Institute of Informatics (NII), Japan</span></a><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";color:#333333;background:white'>, supervised
-  by </span><a href="http://research.nii.ac.jp/~satoh/index.html"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Prof.
-  Shin'ichi Satoh</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>. I obtained my Ph.D from </span><a
-  href="http://www.whu.edu.cn/"><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  background:white'>Wuhan University</span></a><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";color:#333333;background:white'> in 2017. My
-  Ph.D supervisor is </span><a
-  href="http://multimedia.whu.edu.cn/index.php?m=content&amp;c=index&amp;a=show&amp;catid=123&amp;id=89"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Prof.
-  Ruimin Hu</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>, at </span><a
-  href="http://multimedia.whu.edu.cn/"><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>National Engineering
-  Research Center for Multimedia Software (NERCMS)</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>, School of Computer Science, </span><a
-  href="https://en.wikipedia.org/wiki/Wuhan_University"><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";background:white'>Wuhan University</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>. My research interests focus on person re-identification
-  and instance search. I won the Best Paper Award at the 15th Pacific-Rim
-  Conference on Multimedia (PCM 2014).</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>&nbsp;</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>wangz AT nii.ac.jp</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>&nbsp;</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>My </span><a href="./CV.pdf"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>CV</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>, updated in 2017.12.01. </span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal align=left style='margin-top:7.5pt;margin-right:0in;
-margin-bottom:7.5pt;margin-left:0in;text-align:left;line-height:30.0pt;
-background:white'><b><span style='font-size:22.0pt;font-family:"Microsoft Himalaya";
-color:#214B6A'>News</span></b></p>
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=0
- style='width:737.1pt;border-collapse:collapse;border:none'>
- <tr>
-  <td width=983 valign=top style='width:737.1pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>[2017.11.09] </span></b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>One co-authored paper was accepted by </span><a
-  href="https://aaai.org/Conferences/AAAI-18/aaai18call/"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>AAAI
-  2018</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>.</span></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>[2017.10.01] </span></b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>I started to work in </span><a
-  href="http://www.satoh-lab.nii.ac.jp/index.html"><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>Satoh-Lab</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>, as a post-doc project researcher.</span></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>[2017.09.20]</span></b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'> I was awarded the </span><a
-  href="http://multimedia.whu.edu.cn/content-135-142-1.html"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>ACM-Wuhan&amp;HBCS
-  Excellent Doctoral Dissertation Award, 2017</span></a><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:#333333;background:white'>.</span></p>
-  <p class=MsoNormal><a name="OLE_LINK6"></a><a name="OLE_LINK5"><b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>[2017.09.12]</span></b></a><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";color:#333333;background:white'> </span><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>One paper was accepted by IEEE Transactions on Cybernetics
-  [</span><a href="http://ieeexplore.ieee.org/document/8059849/"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>paper</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>].</span></p>
-  <p class=MsoNormal><a name="OLE_LINK4"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";color:#333333;background:white'>[2017.09.10]</span></b></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'> </span><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>One co-authored paper was accepted by Pattern
-  Recognition [</span><a
-  href="http://www.sciencedirect.com/science/article/pii/S0031320317303576"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>paper</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>].</span></p>
-  <p class=MsoNormal><a name="OLE_LINK3"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";color:#333333;background:white'>[2017.08.30]</span></b></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'> One co-authored paper, </span><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";color:#333333;background:white'>which
-  observes that the person retrieval and the scene retrieval are in a dilemma
-  for the Person-Scene Instance Search (P-S INS) task, was accepted by </span><a
-  href="http://cv.sdsu.edu/vscc/"><span style='font-size:14.0pt;font-family:
-  "Microsoft Himalaya";background:white'>ACM Multimedia Workshop on Visual
-  Analysis for Smart and Connected Communities 2017</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>.</span></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>[2017.07.02]</span></b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'> One paper, which proposes a metric learning method by
-  exploiting Gaussian-Laplace distribution statistical inference, was accepted
-  by </span><a href="http://www.acmmm.org/2017/"><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>ACM Multimedia 2017</span></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'> (CCF Rank A).</span></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>[2017.05.10]</span></b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'> I released some collected </span><a
-  href="./re_id_resources.html"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Re-id
-  Resources</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>.</span></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>[2017.04.22]</span></b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'> I was awarded as the outstanding graduates.</span></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>[2017.03.25]</span></b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'> <a name="OLE_LINK2">One co-authored paper was accepted by </a><a
-  name="OLE_LINK1">ICME 2017</a> (CCF Rank B).</span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal align=left style='margin-top:7.5pt;margin-right:0in;
-margin-bottom:7.5pt;margin-left:0in;text-align:left;line-height:30.0pt;
-background:white'><b><span style='font-size:22.0pt;font-family:"Microsoft Himalaya";
-color:#214B6A'>Selected Papers</span></b></p>
-
-<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=0
- style='width:704.25pt;border-collapse:collapse;border:none'>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1c3tabLm"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>Video-based Person
-  Re-identification via Self Paced Weighting</span></a></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>Wenjun
-  Huang, Chao Liang, Yi Yu, <b>Zheng Wang</b>, Weijian Ruan, Ruimin Hu</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>AAAI, 2018</span></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1brjORTl"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>Person Reidentification
-  via Discrepancy Matrix and Matrix Metric</span></a></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>Zheng
-  Wang</span></b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>,
-  Ruimin Hu, Chen Chen, Yi Yu, Junjun Jiang, Chao Liang, Shin'ichi Satoh</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>IEEE Transactions on Cybernetics, 2018, </span><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:red;
-  background:white'>code is coming soon</span></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1c39VawC"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>Statistical Inference
-  of Gaussian-Laplace Distribution for Person Verification</span></a></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>Zheng
-  Wang</span></b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>,
-  Ruimin Hu, Yi Yu, Junjun Jiang, Jiayi Ma, Shin'ichi Satoh</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>ACM MM, 2017, </span><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:red;background:white'>code is
-  coming soon</span></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1mi5asIk"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>TAICHI
-  Distance for Person Re-identification</span></a></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Zheng Wang</span></b><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:#333333;background:white'>,
-  Ruimin Hu, Yi Yu, Chao Liang, Chen Chen</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>ICASSP, 2017, </span><a
-  href="https://pan.baidu.com/s/1pKIRigN"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>PPT</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1qY6nYS8"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Scale-adaptive
-  Low-resolution Person Re-identification via Learning A Discriminating Surface</span></a></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Zheng Wang</span></b><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:#333333;background:white'>,
-  Ruimin Hu, Yi Yu, Junjun Jiang, Chao Liang, Jinqiao Wang</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>IJCAI, 2016, </span><a
-  href="https://pan.baidu.com/s/1boKBvrh"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>Datasets</span></b></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>, </span><a href="https://pan.baidu.com/s/1nuPGKXF"><b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Code</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1bp9wrJh"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>WHU-NERCMS
-  at TRECVID2016: Instance Search Task</span></a></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Zheng Wang</span></b><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:#333333;background:white'> <i>et
-  al.</i></span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>TRECVID Workshop, 2016, </span><a
-  href="https://pan.baidu.com/s/1pLdjMpt"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>PPT</span></b></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>, </span><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:red;background:white'>MAP=0.758, our system is considered to be unique,
-  interesting, clever, and ultimately informative.</span></b></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1jIgHGt4"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Zero-shot
-  Person Re-identification via Cross-view Consistency</span></a></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Zheng Wang</span></b><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:#333333;background:white'>,
-  Ruimin Hu, Chao Liang, Yi Yu, Junjun Jiang, Mang Ye, Jun Chen, Qingming Leng</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>IEEE Transactions on Multimedia, 2016, </span><a
-  href="https://pan.baidu.com/s/1jHU66Mi"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>Code</span></b></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>, </span><a href="https://pan.baidu.com/s/1eS3k8Tk"><b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Poster</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1i5mPzO5"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>DeepList:
-  Learning Deep Features with Adaptive Listwise Constraint for Person
-  Re-identification</span></a></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Jin Wang, <b>Zheng Wang</b>, Changxin Gao,
-  Nong Sang, Rui Huang</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>IEEE Transactions on Circuits and Systems for
-  Video Technology, 2016, </span><a href="https://github.com/jinw1004/DeepList"><b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Code</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1i5iLGNF"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Person
-  Re-identification via Ranking Aggregation of Similarity Pulling and
-  Dissimilarity Pushing</span></a></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Mang Ye, Chao Liang, Yi Yu, <b>Zheng Wang</b>,
-  Qingming Leng, Chunxia Xiao, Jun Chen, Ruimin Hu</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>IEEE Transactions on Multimedia, 2016, </span><a
-  href="https://pan.baidu.com/s/1jINvkLw"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>Code</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1i4DDAtB"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Similarity
-  Learning with Top-heavy Ranking Loss for Person Re-identification</span></a></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Jin Wang, Nong Sang, <b>Zheng Wang</b>,
-  Changxin Gao</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>IEEE Signal Processing Letters, 2016, </span><a
-  href="https://github.com/jinw1004/SLTRL"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>Code</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1o8seT3k"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Multi-Level
-  Fusion for Person Re-identification with Incomplete Marks</span></a></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Zheng Wang</span></b><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:#333333;background:white'>,
-  Ruimin Hu, Yi Yu, Chao Liang, Wenxin Huang</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>ACM MM, 2015, </span><a
-  href="https://pan.baidu.com/s/1jI7MjDs"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>Poster</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1bpaQ22F"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Region-based
-  Interactive Ranking Optimization For Person Re-identification</span></a></p>
-  <p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Zheng Wang</span></b><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:#333333;background:white'>,
-  Ruimin Hu, Chao Liang, Qingming Leng, Kaimin Sun</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>PCM, 2014, </span><b><span style='font-size:
-  14.0pt;font-family:"Microsoft Himalaya";color:red;background:white'>Best
-  Paper Award</span></b><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>, </span><a
-  href="http://v.youku.com/v_show/id_XMTc1NjQyMDYxNg==.html"><b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Demo</span></b></a><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-  background:white'>, </span><a href="https://pan.baidu.com/s/1bp1UMuF"><b><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>PPT</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1jHJbpye"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>SRLSP:
-  A Face Image Super-Resolution Algorithm Using Smooth Regression with Local
-  Structure Prior</span></a></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Junjun Jiang, Chen Chen, Jiayi Ma, <b>Zheng
-  Wang</b>, Zhongyuan Wang, Ruimin Hu</span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>IEEE Transactions on Multimedia, 2017, </span><a
-  href="https://pan.baidu.com/s/1pKD1wLX"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>Code</span></b></a></p>
-  </td>
- </tr>
- <tr style='height:51.3pt'>
-  <td width=939 valign=top style='width:704.25pt;padding:0in 5.4pt 0in 5.4pt;
-  height:51.3pt'>
-  <p class=MsoNormal><a href="https://pan.baidu.com/s/1o8Ez9bk"><span
-  style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Noise
-  Robust Face Image Super-Resolution Through Smooth Sparse Representation</span></a></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>Junjun Jiang, Jiayi Ma, Chen Chen, Xinwei
-  Jiang, <b>Zheng Wang</b></span></p>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-  color:#333333;background:white'>IEEE Transactions on Cybernetics, 2016, </span><a
-  href="https://pan.baidu.com/s/1eS1iGU2"><b><span style='font-size:14.0pt;
-  font-family:"Microsoft Himalaya";background:white'>Code</span></b></a></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya"'>&nbsp;</span></p>
-
-<p class=MsoNormal align=left style='margin-top:7.5pt;margin-right:0in;
-margin-bottom:7.5pt;margin-left:0in;text-align:left;line-height:30.0pt;
-background:white'><b><span style='font-size:22.0pt;font-family:"Microsoft Himalaya";
-color:#214B6A'>Collaborators</span></b></p>
-
-<p class=MsoNormal><a href="http://mmap.whu.edu.cn/"><span style='font-size:
-14.0pt;font-family:"Microsoft Himalaya";background:white'>Chao Liang</span></a><span
-style='font-size:14.0pt;font-family:"Microsoft Himalaya";color:#333333;
-background:white'>, Wuhan University</span></p>
-
-<p class=MsoNormal><a href="https://jiangjunjun.wordpress.com/"><span
-style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Junjun
-Jiang</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-color:#333333;background:white'>, China University of Geosciences</span></p>
-
-<p class=MsoNormal><a href="http://www.comp.hkbu.edu.hk/~mangye/"><span
-style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Mang
-Ye</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-color:#333333;background:white'>, Hong Kong Baptist University</span></p>
-
-<p class=MsoNormal><a href="https://github.com/jinw1004/"><span
-style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Jin
-Wang</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-color:#333333;background:white'>, Huazhong University of Science and Technology</span></p>
-
-<p class=MsoNormal><a href="http://research.nii.ac.jp/~yiyu/"><span
-style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Yi
-Yu</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-color:#333333;background:white'>, National Institute of Informatics, Japan</span></p>
-
-<p class=MsoNormal><a
-href="http://www.nlpr.ia.ac.cn/iva/homepage/jqwang/index.htm"><span
-style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Jinqiao
-Wang</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-color:#333333;background:white'>, Institute of Automation, Chinese Academy of
-Sciences</span></p>
-
-<p class=MsoNormal><a href="http://www.utdallas.edu/~cxc123730/"><span
-style='font-size:14.0pt;font-family:"Microsoft Himalaya";background:white'>Chen
-Chen</span></a><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-color:#333333;background:white'>, University of Central Florida</span></p>
-
-<p class=MsoNormal><span style='font-size:14.0pt;font-family:"Microsoft Himalaya";
-color:#333333;background:white'>&nbsp;</span></p>
-
-</div>
 <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=n&d=i9PFnERoYpC6smAF5YNXxydQdky9OUT-OrM54MmOIOE&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353"></script>
-</body>
 
+</body>
 </html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
