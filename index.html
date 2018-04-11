@@ -1,470 +1,111 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-<title>index</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
-/* Author: Nicolas Hery - http://nicolashery.com */
-/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
-/* Source: https://github.com/nicolahery/markdownpad-github */
-
-/* RESET
-=============================================================================*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* BODY
-=============================================================================*/
-
-body {
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
-  padding: 20px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-body>*:first-child {
-  margin-top: 0 !important;
-}
-
-body>*:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* BLOCKS
-=============================================================================*/
-
-p, blockquote, ul, ol, dl, table, pre {
-  margin: 15px 0;
-}
-
-/* HEADERS
-=============================================================================*/
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
-  font-size: inherit;
-}
-
-h1 {
-  font-size: 28px;
-  color: #000;
-}
-
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #ccc;
-  color: #000;
-}
-
-h3 {
-  font-size: 18px;
-}
-
-h4 {
-  font-size: 16px;
-}
-
-h5 {
-  font-size: 14px;
-}
-
-h6 {
-  color: #777;
-  font-size: 14px;
-}
-
-body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
-  margin-top: 10px;
-}
-
-/* LINKS
-=============================================================================*/
-
-a {
-  color: #4183C4;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* LISTS
-=============================================================================*/
-
-ul, ol {
-  padding-left: 30px;
-}
-
-ul li > :first-child, 
-ol li > :first-child, 
-ul li ul:first-of-type, 
-ol li ol:first-of-type, 
-ul li ol:first-of-type, 
-ol li ul:first-of-type {
-  margin-top: 0px;
-}
-
-ul ul, ul ol, ol ol, ol ul {
-  margin-bottom: 0;
-}
-
-dl {
-  padding: 0;
-}
-
-dl dt {
-  font-size: 14px;
-  font-weight: bold;
-  font-style: italic;
-  padding: 0;
-  margin: 15px 0 5px;
-}
-
-dl dt:first-child {
-  padding: 0;
-}
-
-dl dt>:first-child {
-  margin-top: 0px;
-}
-
-dl dt>:last-child {
-  margin-bottom: 0px;
-}
-
-dl dd {
-  margin: 0 0 15px;
-  padding: 0 15px;
-}
-
-dl dd>:first-child {
-  margin-top: 0px;
-}
-
-dl dd>:last-child {
-  margin-bottom: 0px;
-}
-
-/* CODE
-=============================================================================*/
-
-pre, code, tt {
-  font-size: 12px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-}
-
-code, tt {
-  margin: 0 0px;
-  padding: 0px 0px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px;
-}
-
-pre>code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent;
-}
-
-pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px;
-}
-
-pre code, pre tt {
-  background-color: transparent;
-  border: none;
-}
-
-kbd {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #DDDDDD;
-    background-image: linear-gradient(#F1F1F1, #DDDDDD);
-    background-repeat: repeat-x;
-    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
-    border-image: none;
-    border-radius: 2px 2px 2px 2px;
-    border-style: solid;
-    border-width: 1px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 10px;
-    padding: 1px 4px;
-}
-
-/* QUOTES
-=============================================================================*/
-
-blockquote {
-  border-left: 4px solid #DDD;
-  padding: 0 15px;
-  color: #777;
-}
-
-blockquote>:first-child {
-  margin-top: 0px;
-}
-
-blockquote>:last-child {
-  margin-bottom: 0px;
-}
-
-/* HORIZONTAL RULES
-=============================================================================*/
-
-hr {
-  clear: both;
-  margin: 15px 0;
-  height: 0px;
-  overflow: hidden;
-  border: none;
-  background: transparent;
-  border-bottom: 4px solid #ddd;
-  padding: 0;
-}
-
-/* TABLES
-=============================================================================*/
-
-table th {
-  font-weight: bold;
-}
-
-table th, table td {
-  border: 1px solid #ccc;
-  padding: 6px 13px;
-}
-
-table tr {
-  border-top: 1px solid #ccc;
-  background-color: #fff;
-}
-
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-
-/* IMAGES
-=============================================================================*/
-
-img {
-  max-width: 100%
-}
-</style>
-<base href='file:\\\C:\Users\wangz\Desktop\'/>
+<meta charset="utf-8">
+<title>Zheng Wang (王正)</title>
 </head>
 <body>
-<h2>Zheng Wang (王正)</h2>
-<h3>Postdoctoral researcher</h3>
-<blockquote>
-<p>I am currently a postdoctoral researcher at <a href="http://www.satoh-lab.nii.ac.jp/index.html">Satoh-Lab</a>, <a href="https://www.nii.ac.jp/en/">National Institute of Informatics (NII)</a>, Japan, supervised by Prof. <a href="http://research.nii.ac.jp/~satoh/index.html">Shin'ichi Satoh</a>. I received my Ph.D. at <a href="http://multimedia.whu.edu.cn">National Engineering Research Center for Multimedia Software (NERCMS)</a>, <a href="http://www.whu.edu.cn">Wuhan University</a> in 2017, under the supervision of <a href="http://multimedia.whu.edu.cn/index.php?m=content&amp;c=index&amp;a=show&amp;catid=123&amp;id=89">Prof. Ruimin Hu</a>. My research interests focus on person re-identification and instance search. </p>
-<p>Shin'ichi Satoh Laboratory<br />
-National Institute of Informatics (NII)<br />
-2-1-2 Hitotsubashi, Chiyoda-ku, Tokyo 101-8430, Japan  
-</p>
-<p>wangz(at)nii.ac.jp</p>
-</blockquote>
-<h2>News</h2>
-<ul>
-<li><strong>2018.02.13</strong>, One paper was accepted by <a href="https://icra2018.org">ICRA 2018</a>.</li>
-<li><strong>2018.01.30</strong>, One paper was accepted by <a href="https://2018.ieeeicassp.org">ICASSP 2018</a>.</li>
-<li><strong>2017.11.09</strong>, One paper was accepted by <a href="https://aaai.org/Conferences/AAAI-18/">AAAI 2018</a>.</li>
+<div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_SVG_Hidden"></div><svg><defs id="MathJax_SVG_glyphs"><path id="MJMATHI-45" stroke-width="1" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path><path id="MJMAIN-3D" stroke-width="1" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJMATHI-6D" stroke-width="1" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJMATHI-63" stroke-width="1" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><path id="MJMAIN-32" stroke-width="1" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJSZ1-2211" stroke-width="1" d="M61 748Q64 750 489 750H913L954 640Q965 609 976 579T993 533T999 516H979L959 517Q936 579 886 621T777 682Q724 700 655 705T436 710H319Q183 710 183 709Q186 706 348 484T511 259Q517 250 513 244L490 216Q466 188 420 134T330 27L149 -187Q149 -188 362 -188Q388 -188 436 -188T506 -189Q679 -189 778 -162T936 -43Q946 -27 959 6H999L913 -249L489 -250Q65 -250 62 -248Q56 -246 56 -239Q56 -234 118 -161Q186 -81 245 -11L428 206Q428 207 242 462L57 717L56 728Q56 744 61 748Z"></path><path id="MJMATHI-6E" stroke-width="1" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJMATHI-69" stroke-width="1" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJMAIN-31" stroke-width="1" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJMATHI-61" stroke-width="1" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJMAIN-30" stroke-width="1" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs></svg></div><div id="wmd-preview" class="wmd-preview"><div class="md-section-divider"></div><div class="md-section-divider"></div><h2 data-anchor-id="nuqa" id="zheng-wang-王正">Zheng Wang (王正)</h2><hr><div class="md-section-divider"></div><h3 data-anchor-id="2q6n" id="postdoctoral-researcher">Postdoctoral researcher</h3><blockquote data-anchor-id="12zw" class="white-blockquote">
+  <p>I am currently a postdoctoral researcher at <a href="http://www.satoh-lab.nii.ac.jp/index.html" target="_blank">Satoh-Lab</a>, <a href="https://www.nii.ac.jp/en/" target="_blank">National Institute of Informatics (NII)</a>, Japan, supervised by Prof. <a href="http://research.nii.ac.jp/~satoh/index.html" target="_blank">Shin'ichi Satoh</a>. I received my Ph.D. at <a href="http://multimedia.whu.edu.cn" target="_blank">National Engineering Research Center for Multimedia Software (NERCMS)</a>, <a href="http://www.whu.edu.cn" target="_blank">Wuhan University</a> in 2017, under the supervision of <a href="http://multimedia.whu.edu.cn/index.php?m=content&amp;c=index&amp;a=show&amp;catid=123&amp;id=89" target="_blank">Prof. Ruimin Hu</a>. My research interests focus on person re-identification and instance search. </p>
+  
+  <p><i class="icon-map-marker"></i> Shin'ichi Satoh Laboratory <br>
+  National Institute of Informatics (NII) <br>
+  2-1-2 Hitotsubashi, Chiyoda-ku, Tokyo 101-8430, Japan  </p>
+  
+  <p><i class="icon-envelope"></i>  wangz(at)nii.ac.jp <br>
+  <i class="icon-file"></i>  <a href="https://wangzwhu.github.io/home/CV.pdf" target="_blank">Resume</a>, updated in 2017.12.01. </p>
+</blockquote><hr><div class="md-section-divider"></div><h2 data-anchor-id="nth6" id="news">News</h2><ul data-anchor-id="zaql">
+<li><strong>2018.02.13</strong>, One paper was accepted by <a href="https://icra2018.org" target="_blank">ICRA 2018</a>.</li>
+<li><strong>2018.01.30</strong>, One paper was accepted by <a href="https://2018.ieeeicassp.org" target="_blank">ICASSP 2018</a>.</li>
+<li><strong>2017.11.09</strong>, One paper was accepted by <a href="https://aaai.org/Conferences/AAAI-18/" target="_blank">AAAI 2018</a>.</li>
 <li><strong>2017.10.01</strong>, I started to work at Satoh-Lab, as a postdoctoral researcher.</li>
 <li><strong>2017.09.20</strong>, I was awarded the ACM Wuhan Doctoral Dissertation Award, 2017.</li>
 <li><strong>2017.09.12</strong>, One paper was accepted by IEEE Transactions on Cybernetics.</li>
 <li><strong>2017.09.10</strong>, One paper was accepted by Pattern Recognition.</li>
-<li><strong>2017.07.02</strong>, One paper was accepted by <a href="http://www.acmmm.org/2017/">ACM Multimedia 2017</a>.</li>
-<li><strong>2017.05.10</strong>, I released some collected <a href="./re_id_resources.html">Re-id Resources</a>.</li>
-</ul>
-<h2>Publications</h2>
-<h3>Journal</h3>
-<ul>
-<li>
-<p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8059849">Person Reidentification via Discrepancy Matrix and Matrix Metric</a><br />
-<strong>Z Wang</strong>, R Hu, C Chen, Y Yu, J Jiang, C Liang, S Satoh<br />
-<em>IEEE Transactions on Cybernetics</em>, 2018  
-</p>
-</li>
-<li>
-<p><a href="https://ieeexplore.ieee.org/document/7346474/">Zero-shot Person Re-identification via Cross-view Consistency</a><br />
-<strong>Z Wang</strong>, R Hu, C Liang, Y Yu, J Jiang, M Ye, J Chen, Q Leng<br />
-<em>IEEE Transactions on Multimedia</em>, 2016  
-</p>
-</li>
-<li>
-<p><a href="https://ieeexplore.ieee.org/document/7502111/">DeepList: Learning Deep Features with Adaptive Listwise Constraint for Person Re-identification</a><br />
-J Wang, <strong>Z Wang</strong>, C Gao, N Sang, R Huang<br />
-<em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 2017  
-</p>
-</li>
-<li>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S0031320317303576">Equidistance Constrained Metric Learning for Person Re-identification</a><br />
-J Wang, <strong>Z Wang</strong>, C Liang, C Gao, N Sang<br />
-<em>Pattern Recognition</em>, 2017  
-</p>
-</li>
-<li>
-<p><a href="https://ieeexplore.ieee.org/document/7557057/">Person Re-identification via Ranking Aggregation of Similarity Pulling and Dissimilarity Pushing</a><br />
-M Ye, C Liang, Y Yu, <strong>Z Wang</strong>, Q Leng, C Xiao, J Chen, R Hu<br />
-<em>IEEE Transactions on Multimedia</em>, 2016  
-</p>
-</li>
-<li>
-<p><a href="https://ieeexplore.ieee.org/document/7547257/">SRLSP: A Face Image Super-Resolution Algorithm Using Smooth Regression with Local Structure Prior</a><br />
-J Jiang, C Chen, J Ma, <strong>Z Wang</strong>, Z Wang, R Hu<br />
-<em>IEEE Transactions on Multimedia</em>, 2017 </p>
-</li>
-<li>
-<p><a href="https://ieeexplore.ieee.org/document/7553522/">Noise Robust Face Image Super-Resolution Through Smooth Sparse Representation</a><br />
-J Jiang, J Ma, C Chen, X Jiang, <strong>Z Wang</strong><br />
-<em>IEEE Transactions on Cybernetics</em>, 2017  
-</p>
-</li>
-</ul>
-<h3>Conference</h3>
-<ul>
-<li>
-<p>Visual Homing via Guided Locality Preserving Matching (Accepted)<br />
-J Ma, J Zhao, J Jiang, H Zhou, Y Zhou, <strong>Z Wang</strong>, X Guo<br />
-<em>ICRA</em>, 2018  
-</p>
-</li>
-<li>
-<p>Residual Learning for Face Sketch Synthesis (Accepted)<br />
-J Jiang, Y Yu, <strong>Z Wang</strong>, J Ma<br />
-<em>ICASSP</em>, 2018  
-</p>
-</li>
-<li>
-<p>Video-based Person Re-identification via Self Paced Weighting (Accepted)<br />
-W Huang, C Liang, Y Yu, <strong>Z Wang</strong>, W Ruan, R Hu<br />
-<em>AAAI</em>, 2018  
-</p>
-</li>
-<li>
-<p><a href="https://dl.acm.org/citation.cfm?id=3123421">Statistical Inference of Gaussian-Laplace Distribution for Person Verification</a><br />
-<strong>Z Wang</strong>, R Hu, Y Yu, J Jiang, J Ma, S Satoh<br />
-<em>ACM Multimedia</em>, 2017  
-</p>
-</li>
-<li>
-<p><a href="https://ieeexplore.ieee.org/document/7952517/">TAICHI Distance for Person Re-identification</a><br />
-<strong>Z Wang</strong>, R Hu, Y Yu, C Liang, C Chen<br />
-<em>ICASSP</em>, 2017  
-</p>
-</li>
-<li>
-<p><a href="https://www.ijcai.org/Proceedings/16/Papers/379.pdf">Scale-adaptive Low-resolution Person Re-identification via Learning A Discriminating Surface</a><br />
-<strong>Z Wang</strong>, R Hu, Y Yu, J Jiang, C Liang, J Wang<br />
-<em>IJCAI</em>, 2016  
-</p>
-</li>
-<li>
-<p><a href="https://dl.acm.org/citation.cfm?id=2806400">Multi-Level Fusion for Person Re-identification with Incomplete Marks</a><br />
-<strong>Z Wang</strong>, R Hu, Y Yu, C Liang, W Huang<br />
-<em>ACM Multimedia</em>, 2015  
-</p>
-</li>
-<li>
-<p><a href="https://dl.acm.org/citation.cfm?id=2806326">Ranking Optimization for Person Re-identification via Similarity and Dissimilarity</a><br />
-M Ye, C Liang, <strong>Z Wang</strong>, Q Leng, J Chen<br />
-<em>ACM Multimedia</em>, 2015 </p>
-</li>
-<li>
-<p><a href="https://dl.acm.org/citation.cfm?id=2749347">Specific Person Retrieval via Incomplete Text Description</a><br />
-M Ye, C Liang, <strong>Z Wang</strong>, Q Leng, J Chen, J Liu  <br />
-<em>ICMR</em>, 2015   
-</p>
-</li>
-<li>
-<p><a href="http://ebooks.iospress.com/volumearticle/44777">Person Re-Identification via Multiple Coarse-to-Fine Deep Metrics</a><br />
-M Xiong, J Chen, <strong>Z Wang</strong>, Z Wang, R Hu, C Liang, D Shi<br />
-<em>ECAI</em>, 2016  
-</p>
-</li>
-<li>
-<p><a href="https://link.springer.com/chapter/10.1007/978-3-319-27671-7_15">Camera Network Based Person Re-identification by Leveraging Spatial-Temporal Constraint and Multiple Cameras Relations</a> <br />
-W Huang, R Hu, C Liang, Y Yu, <strong>Z Wang</strong>, X Zhong, C Zhang<br />
-<em>MMM</em>, 2016  
-</p>
-</li>
-<li>
-<p><a href="https://link.springer.com/chapter/10.1007/978-3-319-14442-9_6">Sparsity-Based Occlusion Handling Method for Person Re-identification</a><br />
-B Huang, J Chen, Y Wang, C Liang, <strong>Z Wang</strong>, K Sun<br />
-<em>MMM</em>, 2015   
-</p>
-</li>
-<li>
-<p><a href="https://link.springer.com/chapter/10.1007/978-3-319-13168-9_1">Region-based Interactive Ranking Optimization For Person Re-identification</a>   <br />
-<strong>Z Wang</strong>, R Hu, C Liang, Q Leng, K Sun<br />
-<em>PCM</em>, 2014, <code>Best Paper Award</code>  
-</p>
-</li>
-</ul>
-<h3>Technical report</h3>
-<ul>
-<li><a href="https://www-nlpir.nist.gov/projects/tvpubs/tv16.papers/whu-nercms.pdf">WHU-NERCMS at TRECVID2016: Instance Search Task</a><br />
-<strong>Z Wang</strong>, <em>et al.</em><br />
-<em>TRECVID Workshop</em>, 2016, <code>Top Performance</code>  </li>
-</ul>
-<h2>Patents</h2>
-<ul>
+<li><strong>2017.07.02</strong>, One paper was accepted by <a href="http://www.acmmm.org/2017/" target="_blank">ACM Multimedia 2017</a>.</li>
+<li><strong>2017.05.10</strong>, I released some collected <a href="https://wangzwhu.github.io/home/re_id_resources.html" target="_blank">Re-id Resources</a>.</li>
+</ul><hr><div class="md-section-divider"></div><h2 data-anchor-id="45mu" id="publications">Publications</h2><div class="md-section-divider"></div><h3 data-anchor-id="td8c" id="journal">Journal</h3><ul data-anchor-id="v31p">
+<li><p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8059849" target="_blank">Person Reidentification via Discrepancy Matrix and Matrix Metric</a> <br>
+<strong>Z Wang</strong>, R Hu, C Chen, Y Yu, J Jiang, C Liang, S Satoh <br>
+<em>IEEE Transactions on Cybernetics</em>, 2018  </p></li>
+<li><p><a href="https://ieeexplore.ieee.org/document/7346474/" target="_blank">Zero-shot Person Re-identification via Cross-view Consistency</a> <br>
+<strong>Z Wang</strong>, R Hu, C Liang, Y Yu, J Jiang, M Ye, J Chen, Q Leng <br>
+<em>IEEE Transactions on Multimedia</em>, 2016  </p></li>
+<li><p><a href="https://ieeexplore.ieee.org/document/7502111/" target="_blank">DeepList: Learning Deep Features with Adaptive Listwise Constraint for Person Re-identification</a> <br>
+J Wang, <strong>Z Wang</strong>, C Gao, N Sang, R Huang <br>
+<em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 2017  </p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S0031320317303576" target="_blank">Equidistance Constrained Metric Learning for Person Re-identification</a> <br>
+J Wang, <strong>Z Wang</strong>, C Liang, C Gao, N Sang <br>
+<em>Pattern Recognition</em>, 2017  </p></li>
+<li><p><a href="https://ieeexplore.ieee.org/document/7557057/" target="_blank">Person Re-identification via Ranking Aggregation of Similarity Pulling and Dissimilarity Pushing</a> <br>
+M Ye, C Liang, Y Yu, <strong>Z Wang</strong>, Q Leng, C Xiao, J Chen, R Hu <br>
+<em>IEEE Transactions on Multimedia</em>, 2016  </p></li>
+<li><p><a href="https://ieeexplore.ieee.org/document/7547257/" target="_blank">SRLSP: A Face Image Super-Resolution Algorithm Using Smooth Regression with Local Structure Prior</a> <br>
+J Jiang, C Chen, J Ma, <strong>Z Wang</strong>, Z Wang, R Hu <br>
+<em>IEEE Transactions on Multimedia</em>, 2017 </p></li>
+<li><p><a href="https://ieeexplore.ieee.org/document/7553522/" target="_blank">Noise Robust Face Image Super-Resolution Through Smooth Sparse Representation</a> <br>
+J Jiang, J Ma, C Chen, X Jiang, <strong>Z Wang</strong> <br>
+<em>IEEE Transactions on Cybernetics</em>, 2017  </p></li>
+</ul><div class="md-section-divider"></div><h3 data-anchor-id="z0ei" id="conference">Conference</h3><ul data-anchor-id="834a">
+<li><p>Visual Homing via Guided Locality Preserving Matching (Accepted) <br>
+J Ma, J Zhao, J Jiang, H Zhou, Y Zhou, <strong>Z Wang</strong>, X Guo <br>
+<em>ICRA</em>, 2018  </p></li>
+<li><p>Residual Learning for Face Sketch Synthesis (Accepted) <br>
+J Jiang, Y Yu, <strong>Z Wang</strong>, J Ma <br>
+<em>ICASSP</em>, 2018  </p></li>
+<li><p>Video-based Person Re-identification via Self Paced Weighting (Accepted) <br>
+W Huang, C Liang, Y Yu, <strong>Z Wang</strong>, W Ruan, R Hu <br>
+<em>AAAI</em>, 2018  </p></li>
+<li><p><a href="https://dl.acm.org/citation.cfm?id=3123421" target="_blank">Statistical Inference of Gaussian-Laplace Distribution for Person Verification</a> <br>
+<strong>Z Wang</strong>, R Hu, Y Yu, J Jiang, J Ma, S Satoh <br>
+<em>ACM Multimedia</em>, 2017  </p></li>
+<li><p><a href="https://ieeexplore.ieee.org/document/7952517/" target="_blank">TAICHI Distance for Person Re-identification</a> <br>
+<strong>Z Wang</strong>, R Hu, Y Yu, C Liang, C Chen <br>
+<em>ICASSP</em>, 2017  </p></li>
+<li><p><a href="https://www.ijcai.org/Proceedings/16/Papers/379.pdf" target="_blank">Scale-adaptive Low-resolution Person Re-identification via Learning A Discriminating Surface</a> <br>
+<strong>Z Wang</strong>, R Hu, Y Yu, J Jiang, C Liang, J Wang <br>
+<em>IJCAI</em>, 2016  </p></li>
+<li><p><a href="https://dl.acm.org/citation.cfm?id=2806400" target="_blank">Multi-Level Fusion for Person Re-identification with Incomplete Marks</a> <br>
+<strong>Z Wang</strong>, R Hu, Y Yu, C Liang, W Huang <br>
+<em>ACM Multimedia</em>, 2015  </p></li>
+<li><p><a href="https://dl.acm.org/citation.cfm?id=2806326" target="_blank">Ranking Optimization for Person Re-identification via Similarity and Dissimilarity</a> <br>
+M Ye, C Liang, <strong>Z Wang</strong>, Q Leng, J Chen <br>
+<em>ACM Multimedia</em>, 2015 </p></li>
+<li><p><a href="https://dl.acm.org/citation.cfm?id=2749347" target="_blank">Specific Person Retrieval via Incomplete Text Description</a> <br>
+M Ye, C Liang, <strong>Z Wang</strong>, Q Leng, J Chen, J Liu <br>
+<em>ICMR</em>, 2015   </p></li>
+<li><p><a href="http://ebooks.iospress.com/volumearticle/44777" target="_blank">Person Re-Identification via Multiple Coarse-to-Fine Deep Metrics</a> <br>
+M Xiong, J Chen, <strong>Z Wang</strong>, Z Wang, R Hu, C Liang, D Shi <br>
+<em>ECAI</em>, 2016  </p></li>
+<li><p><a href="https://link.springer.com/chapter/10.1007/978-3-319-27671-7_15" target="_blank">Camera Network Based Person Re-identification by Leveraging Spatial-Temporal Constraint and Multiple Cameras Relations</a> <br>
+W Huang, R Hu, C Liang, Y Yu, <strong>Z Wang</strong>, X Zhong, C Zhang <br>
+<em>MMM</em>, 2016  </p></li>
+<li><p><a href="https://link.springer.com/chapter/10.1007/978-3-319-14442-9_17" target="_blank">Person re-identification using data-driven metric adaptation</a> <br>
+<strong>Z Wang</strong>, R Hu, C Liang, J Jiang, K Sun, Q Leng, B Huang <br>
+<em>MMM</em>, 2015  </p></li>
+<li><p><a href="https://link.springer.com/chapter/10.1007/978-3-319-14442-9_6" target="_blank">Sparsity-Based Occlusion Handling Method for Person Re-identification</a> <br>
+B Huang, J Chen, Y Wang, C Liang, <strong>Z Wang</strong>, K Sun <br>
+<em>MMM</em>, 2015   </p></li>
+<li><p><a href="https://link.springer.com/chapter/10.1007/978-3-319-13168-9_1" target="_blank">Region-based Interactive Ranking Optimization For Person Re-identification</a> <br>
+<strong>Z Wang</strong>, R Hu, C Liang, Q Leng, K Sun <br>
+<em>PCM</em>, 2014, <code class="">Best Paper Award</code>  </p></li>
+</ul><div class="md-section-divider"></div><h3 data-anchor-id="kfzf" id="technical-report">Technical report</h3><ul data-anchor-id="osu7">
+<li><a href="https://www-nlpir.nist.gov/projects/tvpubs/tv16.papers/whu-nercms.pdf" target="_blank">WHU-NERCMS at TRECVID2016: Instance Search Task</a> <br>
+<strong>Z Wang</strong>, <em>et al.</em> <br>
+<em>TRECVID Workshop</em>, 2016, <code class="">Top Performance</code>  </li>
+</ul><hr><div class="md-section-divider"></div><h2 data-anchor-id="v9hz" id="patents">Patents</h2><ul data-anchor-id="2aqz">
 <li>[Chinese Patent] ZL201410076028.3, A method and system for person re-identification based on regional relevance feedback</li>
 <li>[Chinese Patent] ZL201410541165.X, A method for adaptive person re-identification based on data driven</li>
 <li>[Chinese Patent] ZL201510153983.7, A method for person retrieval based on incomplete text description</li>
 <li>[Chinese Patent] ZL201410071721.1, A method for person re-identification based on co-metric learning</li>
 <li>[Chinese Patent] ZL201410454857.0, A method for person re-identification based on double-view ranking optimization</li>
 <li>[Chinese Patent] ZL201410827080.8, A method for person re-identification based on ranking aggregation similarity and dissimilarity</li>
-</ul>
-<h2>Awards</h2>
-<ul>
+</ul><hr><div class="md-section-divider"></div><h2 data-anchor-id="djfw" id="awards">Awards</h2><ul data-anchor-id="i0sd">
 <li>ACM Wuhan Doctoral Dissertation Award, Association for Computing Machinery, 2017</li>
 <li>Graduation with Honors, Wuhan University, 2017</li>
 <li>The First Prize of Hubei Science and Technology Progress, Hubei Province, 2016</li>
 <li>Academic Innovation Award, Wuhan University, 2016</li>
 <li>Best Paper Award, Pacific-Rim Conference on Multimedia (PCM), 2014</li>
-</ul>
-
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=n&d=i9PFnERoYpC6smAF5YNXxydQdky9OUT-OrM54MmOIOE&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353"></script>
-
+</ul></div>
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
